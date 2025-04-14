@@ -1,0 +1,62 @@
+header {
+    background: $color-primary;
+    color: white;
+    text-align: center;
+    padding: $spacing-lg;
+  
+    .header-container {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+  
+      .logo {
+        height: 60px;
+      }
+    }
+  }
+  
+  nav {
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  
+    ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 1rem 0;
+      gap: 2rem;
+  
+      a {
+        color: $color-text;
+        text-decoration: none;
+        font-weight: 600;
+  
+        &:hover {
+          color: $color-primary;
+        }
+      }
+    }
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: auto;
+    padding: $spacing-lg;
+  }
+  
+  .section {
+    padding: $spacing-lg 0;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
